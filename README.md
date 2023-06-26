@@ -164,3 +164,40 @@ const paintTodo = ()=> {
 };
 
 ```
+
+# redux-tool kit
+
+## createAction(string)
+
+it creates action factory function.
+
+given argument be the action type
+
+return{type:string, payload?}
+
+## createReducer(initialState, builderCallback)
+
+it creates Reducer, just as named
+
+don't need to use switch-case statement to define reducer!
+
+```
+builder.addCase(actionOne, (state, action)=>{
+    action.payload
+})
+.addCase(actionTwo, (state, action)=>{
+    action.payload
+})
+
+...
+```
+
+## createSlice
+
+it define action, reducer at once
+
+createSlice()
+
+## configureStore
+
+it gives some default functionalities to store
